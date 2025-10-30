@@ -1,0 +1,60 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - article
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - img "Logo" [ref=e7]
+        - menu [ref=e8]:
+          - menuitem "Work Space" [expanded] [ref=e9] [cursor=pointer]:
+            - generic [ref=e10]: Work Space
+          - menu [ref=e11]:
+            - menuitem "Dashboard" [ref=e12] [cursor=pointer]:
+              - img [ref=e13]
+              - generic [ref=e15]: Dashboard
+            - menuitem "Quotes" [ref=e16] [cursor=pointer]:
+              - img [ref=e17]
+              - generic [ref=e20]: Quotes
+            - menuitem "New Quote" [ref=e21] [cursor=pointer]:
+              - img [ref=e22]
+              - generic [ref=e25]: New Quote
+            - menuitem "Policies" [ref=e26] [cursor=pointer]:
+              - img [ref=e27]
+              - generic [ref=e29]: Policies
+            - menuitem "Claims" [ref=e30] [cursor=pointer]:
+              - img [ref=e31]
+              - generic [ref=e40]: Claims
+            - menuitem "Profile" [ref=e41] [cursor=pointer]:
+              - img [ref=e42]
+              - generic [ref=e45]: Profile
+          - menuitem "Control Panel" [expanded] [ref=e46] [cursor=pointer]:
+            - generic [ref=e47]: Control Panel
+          - menu [ref=e48]:
+            - menuitem "Products" [ref=e49] [cursor=pointer]:
+              - img [ref=e50]
+              - generic [ref=e52]: Products
+            - menuitem "Users" [ref=e53] [cursor=pointer]:
+              - img [ref=e54]
+              - generic [ref=e57]: Users
+            - menuitem "General Settings" [ref=e58] [cursor=pointer]:
+              - img [ref=e59]
+              - generic [ref=e62]: General Settings
+            - menuitem "Configurations" [ref=e63] [cursor=pointer]:
+              - img [ref=e64]
+              - generic [ref=e67]: Configurations
+            - menuitem "Profile" [ref=e68] [cursor=pointer]:
+              - img [ref=e69]
+              - generic [ref=e72]: Profile
+      - generic [ref=e74] [cursor=pointer]:
+        - img [ref=e76]
+        - paragraph [ref=e79]: Logout Account
+    - main [ref=e81]:
+      - generic [ref=e86]:
+        - navigation [ref=e89]:
+          - list [ref=e90]:
+            - listitem [ref=e91]:
+              - generic [ref=e92]: Dashboard
+        - heading "Dashboard" [level=2] [ref=e95]
+```

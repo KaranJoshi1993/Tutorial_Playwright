@@ -1,0 +1,115 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - link "Agile Infoways" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - button "Agile Infoways" [ref=e9]:
+          - img "Agile Infoways" [ref=e10]
+      - generic [ref=e11]:
+        - navigation [ref=e12]:
+          - list [ref=e13]:
+            - listitem [ref=e14]:
+              - link "Work" [ref=e16] [cursor=pointer]:
+                - /url: /case-studies
+                - generic [ref=e17]: Work
+            - listitem [ref=e18]:
+              - link "Who we serve" [ref=e20] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e21]: Who we serve
+                - img [ref=e23]
+            - listitem [ref=e25]:
+              - link "Services" [ref=e27] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e28]: Services
+                - img [ref=e30]
+            - listitem [ref=e32]:
+              - link "Resources" [ref=e34] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e35]: Resources
+                - img [ref=e37]
+            - listitem [ref=e39]:
+              - link "About" [ref=e41] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e42]: About
+                - img [ref=e44]
+        - link "Get Started" [ref=e46] [cursor=pointer]:
+          - /url: /contact-us
+          - generic [ref=e47]: Get Started
+          - img [ref=e49]
+  - generic [ref=e52]:
+    - generic [ref=e55]:
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - generic [ref=e61]:
+            - generic [ref=e63]:
+              - img [ref=e65]
+              - text: AI Technology
+            - heading "Increasing digital transformation velocity with AI for progressive brands" [level=1] [ref=e67]
+          - link "Get Started" [ref=e68] [cursor=pointer]:
+            - /url: /contact-us/
+            - generic [ref=e69]: Get Started
+            - img [ref=e71]
+        - button [ref=e75]:
+          - img [ref=e76]
+      - generic [ref=e79]:
+        - generic [ref=e80]:
+          - generic [ref=e82]:
+            - generic [ref=e84]:
+              - img [ref=e86]
+              - text: Software Development
+            - heading "Offering next-gen software solution and support with industry expertise" [level=2] [ref=e88]
+          - link "Get Started" [ref=e89] [cursor=pointer]:
+            - /url: /contact-us/
+            - generic [ref=e90]: Get Started
+            - img [ref=e92]
+        - button [ref=e96]:
+          - img [ref=e97]
+      - generic [ref=e100]:
+        - generic [ref=e101]:
+          - generic [ref=e103]:
+            - generic [ref=e105]:
+              - img [ref=e107]
+              - text: Data Science
+            - heading "Offering real-time visibility into your data by integrating data science" [level=2] [ref=e109]
+          - link "Get Started" [ref=e110] [cursor=pointer]:
+            - /url: /contact-us/
+            - generic [ref=e111]: Get Started
+            - img [ref=e113]
+        - button [ref=e117]:
+          - img [ref=e118]
+    - list [ref=e123]:
+      - listitem [ref=e124]:
+        - strong [ref=e125]: "8"
+        - generic [ref=e126]: +
+        - paragraph [ref=e127]: Years in business
+      - listitem [ref=e128]:
+        - strong [ref=e129]: "411"
+        - generic [ref=e130]: +
+        - paragraph [ref=e131]: Clients
+      - listitem [ref=e132]:
+        - strong [ref=e133]: "114"
+        - generic [ref=e134]: +
+        - paragraph [ref=e135]: Tech team
+      - listitem [ref=e136]:
+        - strong [ref=e137]: "1144"
+        - generic [ref=e138]: +
+        - paragraph [ref=e139]: Products developed
+  - generic [ref=e144]:
+    - generic [ref=e148]:
+      - img [ref=e150]
+      - text: Partner
+    - heading "Laying a solid foundation for digital core transformation for startups, SMEs, and enterprises with our pre-vetted resources and next-gen software, product, and application development services" [level=2] [ref=e152]:
+      - text: Laying a solid foundation for digital core transformation for startups, SMEs, and enterprises with our pre-vetted resources and next-gen
+      - link "software" [ref=e153] [cursor=pointer]:
+        - /url: /product-engineering/product-development-services/
+      - text: ","
+      - link "product" [ref=e154] [cursor=pointer]:
+        - /url: /product-engineering/
+      - text: ", and"
+      - link "application development" [ref=e155] [cursor=pointer]:
+        - /url: /mobile-app-development-company/
+      - text: services
+```

@@ -1,0 +1,69 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - article
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - img "Logo" [ref=e7]
+        - menu [ref=e8]:
+          - menuitem "Work Space" [expanded] [ref=e9] [cursor=pointer]:
+            - generic [ref=e10]: Work Space
+          - menu [ref=e11]:
+            - menuitem "Quotes" [ref=e12] [cursor=pointer]:
+              - img [ref=e13]
+              - generic [ref=e16]: Quotes
+            - menuitem "New Quote" [ref=e17] [cursor=pointer]:
+              - img [ref=e18]
+              - generic [ref=e21]: New Quote
+            - menuitem "Policies" [ref=e22] [cursor=pointer]:
+              - img [ref=e23]
+              - generic [ref=e25]: Policies
+            - menuitem "Claims" [ref=e26] [cursor=pointer]:
+              - img [ref=e27]
+              - generic [ref=e36]: Claims
+            - menuitem "Profile" [ref=e37] [cursor=pointer]:
+              - img [ref=e38]
+              - generic [ref=e41]: Profile
+          - menuitem "Control Panel" [expanded] [ref=e42] [cursor=pointer]:
+            - generic [ref=e43]: Control Panel
+          - menu [ref=e44]:
+            - menuitem "Products" [ref=e45] [cursor=pointer]:
+              - img [ref=e46]
+              - generic [ref=e48]: Products
+            - menuitem "Users" [ref=e49] [cursor=pointer]:
+              - img [ref=e50]
+              - generic [ref=e53]: Users
+            - menuitem "Profile" [ref=e54] [cursor=pointer]:
+              - img [ref=e55]
+              - generic [ref=e58]: Profile
+      - generic [ref=e60] [cursor=pointer]:
+        - img [ref=e62]
+        - paragraph [ref=e65]: Logout Account
+    - main [ref=e67]:
+      - generic [ref=e70]:
+        - generic [ref=e72]:
+          - generic [ref=e74]:
+            - navigation [ref=e77]:
+              - list [ref=e78]:
+                - listitem [ref=e79]:
+                  - generic [ref=e80]: Quote
+                - listitem [ref=e81]: /
+                - listitem [ref=e82]:
+                  - link "Create New Quote" [ref=e83] [cursor=pointer]:
+                    - /url: /new-quotes/search-risk-location
+            - heading "Create New Quote" [level=2] [ref=e86]
+          - generic [ref=e87]:
+            - button "Cancel" [ref=e89] [cursor=pointer]:
+              - generic [ref=e90]: Cancel
+            - button "Next" [ref=e92] [cursor=pointer]:
+              - generic [ref=e93]: Next
+        - generic [ref=e94]:
+          - 'heading "Product: N/A" [level=3] [ref=e95]'
+          - generic [ref=e100]:
+            - img [ref=e102]
+            - textbox "Address Search" [ref=e104]:
+              - /placeholder: " "
+            - generic [ref=e105]: Address Search
+```

@@ -1,0 +1,305 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - article
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - img "Logo" [ref=e7]
+        - menu [ref=e8]:
+          - menuitem "Work Space" [expanded] [ref=e9] [cursor=pointer]:
+            - generic [ref=e10]: Work Space
+          - menu [ref=e11]:
+            - menuitem "Quotes" [ref=e12] [cursor=pointer]:
+              - img [ref=e13]
+              - generic [ref=e16]: Quotes
+            - menuitem "New Quote" [ref=e17] [cursor=pointer]:
+              - img [ref=e18]
+              - generic [ref=e21]: New Quote
+            - menuitem "Policies" [ref=e22] [cursor=pointer]:
+              - img [ref=e23]
+              - generic [ref=e25]: Policies
+            - menuitem "Claims" [ref=e26] [cursor=pointer]:
+              - img [ref=e27]
+              - generic [ref=e36]: Claims
+            - menuitem "Profile" [ref=e37] [cursor=pointer]:
+              - img [ref=e38]
+              - generic [ref=e41]: Profile
+          - menuitem "Control Panel" [expanded] [ref=e42] [cursor=pointer]:
+            - generic [ref=e43]: Control Panel
+          - menu [ref=e44]:
+            - menuitem "Products" [ref=e45] [cursor=pointer]:
+              - img [ref=e46]
+              - generic [ref=e48]: Products
+            - menuitem "Users" [ref=e49] [cursor=pointer]:
+              - img [ref=e50]
+              - generic [ref=e53]: Users
+            - menuitem "Profile" [ref=e54] [cursor=pointer]:
+              - img [ref=e55]
+              - generic [ref=e58]: Profile
+      - generic [ref=e60] [cursor=pointer]:
+        - img [ref=e62]
+        - paragraph [ref=e65]: Logout Account
+    - main [ref=e67]:
+      - generic [ref=e70]:
+        - generic [ref=e72]:
+          - generic [ref=e74]:
+            - navigation [ref=e77]:
+              - list [ref=e78]:
+                - listitem [ref=e79]:
+                  - generic [ref=e80]: Quotes
+            - heading "Quotes" [level=2] [ref=e83]
+          - button "Create New Quote" [ref=e85] [cursor=pointer]:
+            - generic [ref=e86]: Create New Quote
+        - generic [ref=e87]:
+          - generic [ref=e88]:
+            - generic [ref=e90]:
+              - img "search" [ref=e92]:
+                - img [ref=e93]
+              - textbox "Search" [ref=e95]
+            - button "Filters 0" [ref=e98] [cursor=pointer]:
+              - img [ref=e100]
+              - generic [ref=e102]: Filters
+              - generic [ref=e103]: "0"
+          - generic [ref=e104]:
+            - table [ref=e111]:
+              - rowgroup [ref=e113]:
+                - row "Quote Number Product Insured Name DBA Quote Effective Date Is Referred Assigned Agent Status Action" [ref=e114]:
+                  - columnheader "Quote Number" [ref=e115]
+                  - columnheader "Product" [ref=e116]
+                  - columnheader "Insured Name" [ref=e117]
+                  - columnheader "DBA" [ref=e118]
+                  - columnheader "Quote Effective Date" [ref=e119]
+                  - columnheader "Is Referred" [ref=e120]
+                  - columnheader "Assigned Agent" [ref=e121]
+                  - columnheader "Status" [ref=e122]
+                  - columnheader "Action" [ref=e123]
+              - rowgroup [ref=e124]:
+                - row "QPH100052 Commercial - Hurricane PM Test Broker Taxes Uncle Sam Brokers 2027-07-25 - POLICY ISSUED ellipsis" [ref=e125]:
+                  - cell "QPH100052" [ref=e126]:
+                    - generic [ref=e127]: QPH100052
+                  - cell "Commercial - Hurricane PM" [ref=e128]:
+                    - generic [ref=e129]: Commercial - Hurricane PM
+                  - cell "Test Broker Taxes" [ref=e130]:
+                    - generic [ref=e131]: Test Broker Taxes
+                  - cell "Uncle Sam Brokers" [ref=e132]:
+                    - generic [ref=e133]: Uncle Sam Brokers
+                  - cell "2027-07-25" [ref=e134]:
+                    - generic [ref=e135]: 2027-07-25
+                  - cell [ref=e136]
+                  - cell "-" [ref=e137]:
+                    - generic [ref=e138]: "-"
+                  - cell "POLICY ISSUED" [ref=e139]:
+                    - generic [ref=e140]: POLICY ISSUED
+                  - cell "ellipsis" [ref=e141]:
+                    - img "ellipsis" [ref=e145] [cursor=pointer]:
+                      - img [ref=e146]
+                - row "QRH100059 Residential - Hurricane PM Clover UAT Test internal 1 Test Company 2026-12-15 - QUOTED ellipsis" [ref=e148]:
+                  - cell "QRH100059" [ref=e149]:
+                    - generic [ref=e150]: QRH100059
+                  - cell "Residential - Hurricane PM" [ref=e151]:
+                    - generic [ref=e152]: Residential - Hurricane PM
+                  - cell "Clover UAT Test internal 1" [ref=e153]:
+                    - generic [ref=e154]: Clover UAT Test internal 1
+                  - cell "Test Company" [ref=e155]:
+                    - generic [ref=e156]: Test Company
+                  - cell "2026-12-15" [ref=e157]:
+                    - generic [ref=e158]: 2026-12-15
+                  - cell [ref=e159]
+                  - cell "-" [ref=e160]:
+                    - generic [ref=e161]: "-"
+                  - cell "QUOTED" [ref=e162]:
+                    - generic [ref=e163]: QUOTED
+                  - cell "ellipsis" [ref=e164]:
+                    - img "ellipsis" [ref=e168] [cursor=pointer]:
+                      - img [ref=e169]
+                - row "QPH100070 Commercial - Hurricane PM Clover UAT Test 1 Test Company 2026-12-15 - QUOTED ellipsis" [ref=e171]:
+                  - cell "QPH100070" [ref=e172]:
+                    - generic [ref=e173]: QPH100070
+                  - cell "Commercial - Hurricane PM" [ref=e174]:
+                    - generic [ref=e175]: Commercial - Hurricane PM
+                  - cell "Clover UAT Test 1" [ref=e176]:
+                    - generic [ref=e177]: Clover UAT Test 1
+                  - cell "Test Company" [ref=e178]:
+                    - generic [ref=e179]: Test Company
+                  - cell "2026-12-15" [ref=e180]:
+                    - generic [ref=e181]: 2026-12-15
+                  - cell [ref=e182]
+                  - cell "-" [ref=e183]:
+                    - generic [ref=e184]: "-"
+                  - cell "QUOTED" [ref=e185]:
+                    - generic [ref=e186]: QUOTED
+                  - cell "ellipsis" [ref=e187]:
+                    - img "ellipsis" [ref=e191] [cursor=pointer]:
+                      - img [ref=e192]
+                - row "QRH100058 Residential - Hurricane PM Clover UAT Test 1 Test Company 2026-12-15 - QUOTED ellipsis" [ref=e194]:
+                  - cell "QRH100058" [ref=e195]:
+                    - generic [ref=e196]: QRH100058
+                  - cell "Residential - Hurricane PM" [ref=e197]:
+                    - generic [ref=e198]: Residential - Hurricane PM
+                  - cell "Clover UAT Test 1" [ref=e199]:
+                    - generic [ref=e200]: Clover UAT Test 1
+                  - cell "Test Company" [ref=e201]:
+                    - generic [ref=e202]: Test Company
+                  - cell "2026-12-15" [ref=e203]:
+                    - generic [ref=e204]: 2026-12-15
+                  - cell [ref=e205]
+                  - cell "-" [ref=e206]:
+                    - generic [ref=e207]: "-"
+                  - cell "QUOTED" [ref=e208]:
+                    - generic [ref=e209]: QUOTED
+                  - cell "ellipsis" [ref=e210]:
+                    - img "ellipsis" [ref=e214] [cursor=pointer]:
+                      - img [ref=e215]
+                - row "QPH100057 Commercial - Hurricane PM Redland Ahead Inc - 2026-08-26 - QUOTED ellipsis" [ref=e217]:
+                  - cell "QPH100057" [ref=e218]:
+                    - generic [ref=e219]: QPH100057
+                  - cell "Commercial - Hurricane PM" [ref=e220]:
+                    - generic [ref=e221]: Commercial - Hurricane PM
+                  - cell "Redland Ahead Inc" [ref=e222]:
+                    - generic [ref=e223]: Redland Ahead Inc
+                  - cell "-" [ref=e224]:
+                    - generic [ref=e225]: "-"
+                  - cell "2026-08-26" [ref=e226]:
+                    - generic [ref=e227]: 2026-08-26
+                  - cell [ref=e228]
+                  - cell "-" [ref=e229]:
+                    - generic [ref=e230]: "-"
+                  - cell "QUOTED" [ref=e231]:
+                    - generic [ref=e232]: QUOTED
+                  - cell "ellipsis" [ref=e233]:
+                    - img "ellipsis" [ref=e237] [cursor=pointer]:
+                      - img [ref=e238]
+                - row "QPH100053 Commercial - Hurricane PM asdfas - 2026-08-21 Derrick Alvarez POLICY ISSUED ellipsis" [ref=e240]:
+                  - cell "QPH100053" [ref=e241]:
+                    - generic [ref=e242]: QPH100053
+                  - cell "Commercial - Hurricane PM" [ref=e243]:
+                    - generic [ref=e244]: Commercial - Hurricane PM
+                  - cell "asdfas" [ref=e245]:
+                    - generic [ref=e246]: asdfas
+                  - cell "-" [ref=e247]:
+                    - generic [ref=e248]: "-"
+                  - cell "2026-08-21" [ref=e249]:
+                    - generic [ref=e250]: 2026-08-21
+                  - cell [ref=e251]
+                  - cell "Derrick Alvarez" [ref=e252]:
+                    - generic [ref=e253]: Derrick Alvarez
+                  - cell "POLICY ISSUED" [ref=e254]:
+                    - generic [ref=e255]: POLICY ISSUED
+                  - cell "ellipsis" [ref=e256]:
+                    - img "ellipsis" [ref=e260] [cursor=pointer]:
+                      - img [ref=e261]
+                - row "QRH100055 Residential - Hurricane PM David Bentz - 2026-08-12 Derrick Alvarez QUOTED ellipsis" [ref=e263]:
+                  - cell "QRH100055" [ref=e264]:
+                    - generic [ref=e265]: QRH100055
+                  - cell "Residential - Hurricane PM" [ref=e266]:
+                    - generic [ref=e267]: Residential - Hurricane PM
+                  - cell "David Bentz" [ref=e268]:
+                    - generic [ref=e269]: David Bentz
+                  - cell "-" [ref=e270]:
+                    - generic [ref=e271]: "-"
+                  - cell "2026-08-12" [ref=e272]:
+                    - generic [ref=e273]: 2026-08-12
+                  - cell [ref=e274]
+                  - cell "Derrick Alvarez" [ref=e275]:
+                    - generic [ref=e276]: Derrick Alvarez
+                  - cell "QUOTED" [ref=e277]:
+                    - generic [ref=e278]: QUOTED
+                  - cell "ellipsis" [ref=e279]:
+                    - img "ellipsis" [ref=e283] [cursor=pointer]:
+                      - img [ref=e284]
+                - row "QPH100051 Commercial - Hurricane PM Test Broker Taxes Uncle Sam Brokers 2026-07-25 - POLICY ISSUED ellipsis" [ref=e286]:
+                  - cell "QPH100051" [ref=e287]:
+                    - generic [ref=e288]: QPH100051
+                  - cell "Commercial - Hurricane PM" [ref=e289]:
+                    - generic [ref=e290]: Commercial - Hurricane PM
+                  - cell "Test Broker Taxes" [ref=e291]:
+                    - generic [ref=e292]: Test Broker Taxes
+                  - cell "Uncle Sam Brokers" [ref=e293]:
+                    - generic [ref=e294]: Uncle Sam Brokers
+                  - cell "2026-07-25" [ref=e295]:
+                    - generic [ref=e296]: 2026-07-25
+                  - cell [ref=e297]
+                  - cell "-" [ref=e298]:
+                    - generic [ref=e299]: "-"
+                  - cell "POLICY ISSUED" [ref=e300]:
+                    - generic [ref=e301]: POLICY ISSUED
+                  - cell "ellipsis" [ref=e302]:
+                    - img "ellipsis" [ref=e306] [cursor=pointer]:
+                      - img [ref=e307]
+                - row "QPH100042 Commercial - Hurricane PM Agg com Demo Test - 2026-04-02 Derrick Alvarez QUOTED ellipsis" [ref=e309]:
+                  - cell "QPH100042" [ref=e310]:
+                    - generic [ref=e311]: QPH100042
+                  - cell "Commercial - Hurricane PM" [ref=e312]:
+                    - generic [ref=e313]: Commercial - Hurricane PM
+                  - cell "Agg com Demo Test" [ref=e314]:
+                    - generic [ref=e315]: Agg com Demo Test
+                  - cell "-" [ref=e316]:
+                    - generic [ref=e317]: "-"
+                  - cell "2026-04-02" [ref=e318]:
+                    - generic [ref=e319]: 2026-04-02
+                  - cell [ref=e320]
+                  - cell "Derrick Alvarez" [ref=e321]:
+                    - generic [ref=e322]: Derrick Alvarez
+                  - cell "QUOTED" [ref=e323]:
+                    - generic [ref=e324]: QUOTED
+                  - cell "ellipsis" [ref=e325]:
+                    - img "ellipsis" [ref=e329] [cursor=pointer]:
+                      - img [ref=e330]
+                - row "QRH100057 Residential - Hurricane PM Beni VIano - 2026-01-08 Tracy Smith1 QUOTED ellipsis" [ref=e332]:
+                  - cell "QRH100057" [ref=e333]:
+                    - generic [ref=e334]: QRH100057
+                  - cell "Residential - Hurricane PM" [ref=e335]:
+                    - generic [ref=e336]: Residential - Hurricane PM
+                  - cell "Beni VIano" [ref=e337]:
+                    - generic [ref=e338]: Beni VIano
+                  - cell "-" [ref=e339]:
+                    - generic [ref=e340]: "-"
+                  - cell "2026-01-08" [ref=e341]:
+                    - generic [ref=e342]: 2026-01-08
+                  - cell [ref=e343]
+                  - cell "Tracy Smith1" [ref=e344]:
+                    - generic [ref=e345]: Tracy Smith1
+                  - cell "QUOTED" [ref=e346]:
+                    - generic [ref=e347]: QUOTED
+                  - cell "ellipsis" [ref=e348]:
+                    - img "ellipsis" [ref=e352] [cursor=pointer]:
+                      - img [ref=e353]
+            - generic [ref=e355]:
+              - generic [ref=e356] [cursor=pointer]:
+                - generic [ref=e357]:
+                  - combobox [ref=e359]
+                  - generic "10 per page" [ref=e360]
+                - generic:
+                  - img:
+                    - img
+              - list [ref=e362]:
+                - listitem "Previous Page" [ref=e363]:
+                  - generic [ref=e364]:
+                    - img "left" [ref=e365]:
+                      - img [ref=e366]
+                    - text: Previous
+                - listitem "1" [ref=e368] [cursor=pointer]:
+                  - generic [ref=e369]: "1"
+                - listitem "2" [ref=e370] [cursor=pointer]:
+                  - generic [ref=e371]: "2"
+                - listitem "3" [ref=e372] [cursor=pointer]:
+                  - generic [ref=e373]: "3"
+                - listitem "4" [ref=e374] [cursor=pointer]:
+                  - generic [ref=e375]: "4"
+                - listitem "5" [ref=e376] [cursor=pointer]:
+                  - generic [ref=e377]: "5"
+                - listitem "Next 5 Pages" [ref=e378] [cursor=pointer]:
+                  - generic [ref=e380]:
+                    - img "double-right" [ref=e381]:
+                      - img [ref=e382]
+                    - generic [ref=e384]: •••
+                - listitem "160" [ref=e385] [cursor=pointer]:
+                  - generic [ref=e386]: "160"
+                - listitem "Next Page" [ref=e387] [cursor=pointer]:
+                  - generic [ref=e388]:
+                    - text: Next
+                    - img "right" [ref=e389]:
+                      - img [ref=e390]
+```

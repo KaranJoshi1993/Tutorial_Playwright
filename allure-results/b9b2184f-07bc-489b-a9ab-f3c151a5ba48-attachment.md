@@ -1,0 +1,80 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - article
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - img "Logo" [ref=e7]
+        - menu [ref=e8]:
+          - menuitem "Work Space" [expanded] [ref=e9] [cursor=pointer]:
+            - generic [ref=e10]: Work Space
+          - menu [ref=e11]:
+            - menuitem "Quotes" [ref=e12] [cursor=pointer]:
+              - img [ref=e13]
+              - generic [ref=e16]: Quotes
+            - menuitem "New Quote" [expanded] [ref=e17] [cursor=pointer]:
+              - img [ref=e18]
+              - generic [ref=e21]: New Quote
+            - menu [ref=e22]:
+              - menuitem "Risk Location" [active] [ref=e23] [cursor=pointer]:
+                - generic [ref=e24]: Risk Location
+              - menuitem "Coverage" [ref=e25] [cursor=pointer]:
+                - generic [ref=e26]: Coverage
+              - menuitem "Quote" [ref=e27] [cursor=pointer]:
+                - generic [ref=e28]: Quote
+              - menuitem "Bind Policy" [ref=e29] [cursor=pointer]:
+                - generic [ref=e30]: Bind Policy
+              - menuitem "Issued Policy" [ref=e31] [cursor=pointer]:
+                - generic [ref=e32]: Issued Policy
+            - menuitem "Policies" [ref=e33] [cursor=pointer]:
+              - img [ref=e34]
+              - generic [ref=e36]: Policies
+            - menuitem "Claims" [ref=e37] [cursor=pointer]:
+              - img [ref=e38]
+              - generic [ref=e47]: Claims
+            - menuitem "Profile" [ref=e48] [cursor=pointer]:
+              - img [ref=e49]
+              - generic [ref=e52]: Profile
+          - menuitem "Control Panel" [expanded] [ref=e53] [cursor=pointer]:
+            - generic [ref=e54]: Control Panel
+          - menu [ref=e55]:
+            - menuitem "Products" [ref=e56] [cursor=pointer]:
+              - img [ref=e57]
+              - generic [ref=e59]: Products
+            - menuitem "Users" [ref=e60] [cursor=pointer]:
+              - img [ref=e61]
+              - generic [ref=e64]: Users
+            - menuitem "Profile" [ref=e65] [cursor=pointer]:
+              - img [ref=e66]
+              - generic [ref=e69]: Profile
+      - generic [ref=e71] [cursor=pointer]:
+        - img [ref=e73]
+        - paragraph [ref=e76]: Logout Account
+    - main [ref=e78]:
+      - generic [ref=e81]:
+        - generic [ref=e83]:
+          - generic [ref=e85]:
+            - navigation [ref=e88]:
+              - list [ref=e89]:
+                - listitem [ref=e90]:
+                  - generic [ref=e91]: Quote
+                - listitem [ref=e92]: /
+                - listitem [ref=e93]:
+                  - link "Create New Quote" [ref=e94] [cursor=pointer]:
+                    - /url: /new-quotes/search-risk-location
+            - heading "Create New Quote" [level=2] [ref=e97]
+          - generic [ref=e98]:
+            - button "Cancel" [ref=e100] [cursor=pointer]:
+              - generic [ref=e101]: Cancel
+            - button "Next" [ref=e103] [cursor=pointer]:
+              - generic [ref=e104]: Next
+        - generic [ref=e105]:
+          - 'heading "Product: N/A" [level=3] [ref=e106]'
+          - generic [ref=e111]:
+            - img [ref=e113]
+            - textbox "Address Search" [ref=e115]:
+              - /placeholder: " "
+            - generic [ref=e116]: Address Search
+```
