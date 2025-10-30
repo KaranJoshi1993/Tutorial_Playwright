@@ -1,0 +1,290 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - article
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - img "Logo" [ref=e7] [cursor=pointer]
+        - menu [ref=e8]:
+          - menuitem "Quotes" [ref=e9] [cursor=pointer]:
+            - img [ref=e10]
+            - generic [ref=e13]: Quotes
+          - menuitem "New Quote" [ref=e14] [cursor=pointer]:
+            - img [ref=e15]
+            - generic [ref=e18]: New Quote
+          - menuitem "Policies" [active] [ref=e19] [cursor=pointer]:
+            - img [ref=e20]
+            - generic [ref=e22]: Policies
+          - menuitem "Claims" [ref=e23] [cursor=pointer]:
+            - img [ref=e24]
+            - generic [ref=e33]: Claims
+          - menuitem "Profile" [ref=e34] [cursor=pointer]:
+            - img [ref=e35]
+            - generic [ref=e38]: Profile
+          - menuitem "Advanced" [ref=e39] [cursor=pointer]:
+            - img [ref=e40]
+            - generic [ref=e43]: Advanced
+      - generic [ref=e45] [cursor=pointer]:
+        - img [ref=e47]
+        - paragraph [ref=e50]: Logout Account
+    - main [ref=e52]:
+      - generic [ref=e55]:
+        - generic [ref=e57]:
+          - navigation [ref=e60]:
+            - list [ref=e61]:
+              - listitem [ref=e62]:
+                - generic [ref=e63]: Policies
+          - heading "Policies" [level=2] [ref=e66]
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - generic [ref=e70]:
+              - img "search" [ref=e72]:
+                - img [ref=e73]
+              - textbox "Search" [ref=e75]
+            - button "Filters 0" [ref=e78] [cursor=pointer]:
+              - img [ref=e80]
+              - generic [ref=e82]: Filters
+              - generic [ref=e83]: "0"
+          - generic [ref=e84]:
+            - table [ref=e91]:
+              - rowgroup [ref=e93]:
+                - row "Policy Number Product Insured Name Total Premium Effective Date Expiration Date Agency Policy Status Action" [ref=e94]:
+                  - columnheader "Policy Number" [ref=e95]
+                  - columnheader "Product" [ref=e96]
+                  - columnheader "Insured Name" [ref=e97]
+                  - columnheader "Total Premium" [ref=e98]
+                  - columnheader "Effective Date" [ref=e99]
+                  - columnheader "Expiration Date" [ref=e100]
+                  - columnheader "Agency" [ref=e101]
+                  - columnheader "Policy Status" [ref=e102]
+                  - columnheader "Action" [ref=e103]
+              - rowgroup [ref=e104]:
+                - row "PPH0000111398-02-00 Commercial - Hurricane PM Test Policy Issuance USA 2027-09-19 2028-09-19 NormanMax Risk Advisors, Inc. BOUND ellipsis" [ref=e105]:
+                  - cell "PPH0000111398-02-00" [ref=e106]:
+                    - link "PPH0000111398-02-00" [ref=e107] [cursor=pointer]:
+                      - /url: "#!"
+                  - cell "Commercial - Hurricane PM" [ref=e108]:
+                    - generic [ref=e109]: Commercial - Hurricane PM
+                  - cell "Test Policy Issuance" [ref=e110]:
+                    - generic [ref=e111]: Test Policy Issuance
+                  - cell "USA" [ref=e112]:
+                    - generic [ref=e113]: USA
+                  - cell "2027-09-19" [ref=e114]
+                  - cell "2028-09-19" [ref=e115]
+                  - cell "NormanMax Risk Advisors, Inc." [ref=e116]:
+                    - generic [ref=e117]: NormanMax Risk Advisors, Inc.
+                  - cell "BOUND" [ref=e118]:
+                    - generic [ref=e119]: BOUND
+                  - cell "ellipsis" [ref=e120]:
+                    - img "ellipsis" [ref=e122] [cursor=pointer]:
+                      - img [ref=e123]
+                - row "PPH0000111359-02-00 Commercial - Hurricane PM Test Broker Taxes DBA Uncle Sam Brokers USA 2027-07-25 2028-07-25 London Underwriters, LLC BOUND ellipsis" [ref=e125]:
+                  - cell "PPH0000111359-02-00" [ref=e126]:
+                    - link "PPH0000111359-02-00" [ref=e127] [cursor=pointer]:
+                      - /url: "#!"
+                  - cell "Commercial - Hurricane PM" [ref=e128]:
+                    - generic [ref=e129]: Commercial - Hurricane PM
+                  - cell "Test Broker Taxes DBA Uncle Sam Brokers" [ref=e130]:
+                    - generic [ref=e131]: Test Broker Taxes DBA Uncle Sam Brokers
+                  - cell "USA" [ref=e132]:
+                    - generic [ref=e133]: USA
+                  - cell "2027-07-25" [ref=e134]
+                  - cell "2028-07-25" [ref=e135]
+                  - cell "London Underwriters, LLC" [ref=e136]:
+                    - generic [ref=e137]: London Underwriters, LLC
+                  - cell "BOUND" [ref=e138]:
+                    - generic [ref=e139]: BOUND
+                  - cell "ellipsis" [ref=e140]:
+                    - img "ellipsis" [ref=e142] [cursor=pointer]:
+                      - img [ref=e143]
+                - row "PPH0000111382-01-00 Commercial - Hurricane PM DMX DBA ruff ryders USA 2026-09-26 2027-09-26 NormanMax Risk Advisors, Inc. BOUND ellipsis" [ref=e145]:
+                  - cell "PPH0000111382-01-00" [ref=e146]:
+                    - link "PPH0000111382-01-00" [ref=e147] [cursor=pointer]:
+                      - /url: "#!"
+                  - cell "Commercial - Hurricane PM" [ref=e148]:
+                    - generic [ref=e149]: Commercial - Hurricane PM
+                  - cell "DMX DBA ruff ryders" [ref=e150]:
+                    - generic [ref=e151]: DMX DBA ruff ryders
+                  - cell "USA" [ref=e152]:
+                    - generic [ref=e153]: USA
+                  - cell "2026-09-26" [ref=e154]
+                  - cell "2027-09-26" [ref=e155]
+                  - cell "NormanMax Risk Advisors, Inc." [ref=e156]:
+                    - generic [ref=e157]: NormanMax Risk Advisors, Inc.
+                  - cell "BOUND" [ref=e158]:
+                    - generic [ref=e159]: BOUND
+                  - cell "ellipsis" [ref=e160]:
+                    - img "ellipsis" [ref=e162] [cursor=pointer]:
+                      - img [ref=e163]
+                - row "PPH0000111385-01-00 Commercial - Hurricane PM Ja DBA Rule USA 2026-09-24 2027-09-24 NormanMax Risk Advisors, Inc. BOUND ellipsis" [ref=e165]:
+                  - cell "PPH0000111385-01-00" [ref=e166]:
+                    - link "PPH0000111385-01-00" [ref=e167] [cursor=pointer]:
+                      - /url: "#!"
+                  - cell "Commercial - Hurricane PM" [ref=e168]:
+                    - generic [ref=e169]: Commercial - Hurricane PM
+                  - cell "Ja DBA Rule" [ref=e170]:
+                    - generic [ref=e171]: Ja DBA Rule
+                  - cell "USA" [ref=e172]:
+                    - generic [ref=e173]: USA
+                  - cell "2026-09-24" [ref=e174]
+                  - cell "2027-09-24" [ref=e175]
+                  - cell "NormanMax Risk Advisors, Inc." [ref=e176]:
+                    - generic [ref=e177]: NormanMax Risk Advisors, Inc.
+                  - cell "BOUND" [ref=e178]:
+                    - generic [ref=e179]: BOUND
+                  - cell "ellipsis" [ref=e180]:
+                    - img "ellipsis" [ref=e182] [cursor=pointer]:
+                      - img [ref=e183]
+                - row "PPH0000111398-01-00 Commercial - Hurricane PM Test Policy Issuance USA 2026-09-19 2027-09-19 NormanMax Risk Advisors, Inc. BOUND ellipsis" [ref=e185]:
+                  - cell "PPH0000111398-01-00" [ref=e186]:
+                    - link "PPH0000111398-01-00" [ref=e187] [cursor=pointer]:
+                      - /url: "#!"
+                  - cell "Commercial - Hurricane PM" [ref=e188]:
+                    - generic [ref=e189]: Commercial - Hurricane PM
+                  - cell "Test Policy Issuance" [ref=e190]:
+                    - generic [ref=e191]: Test Policy Issuance
+                  - cell "USA" [ref=e192]:
+                    - generic [ref=e193]: USA
+                  - cell "2026-09-19" [ref=e194]
+                  - cell "2027-09-19" [ref=e195]
+                  - cell "NormanMax Risk Advisors, Inc." [ref=e196]:
+                    - generic [ref=e197]: NormanMax Risk Advisors, Inc.
+                  - cell "BOUND" [ref=e198]:
+                    - generic [ref=e199]: BOUND
+                  - cell "ellipsis" [ref=e200]:
+                    - img "ellipsis" [ref=e202] [cursor=pointer]:
+                      - img [ref=e203]
+                - row "PPH0000111367-01-00 Commercial - Hurricane PM asdfas USA 2026-08-21 2027-08-21 NormanMax Risk Advisors, Inc. BOUND ellipsis" [ref=e205]:
+                  - cell "PPH0000111367-01-00" [ref=e206]:
+                    - link "PPH0000111367-01-00" [ref=e207] [cursor=pointer]:
+                      - /url: "#!"
+                  - cell "Commercial - Hurricane PM" [ref=e208]:
+                    - generic [ref=e209]: Commercial - Hurricane PM
+                  - cell "asdfas" [ref=e210]:
+                    - generic [ref=e211]: asdfas
+                  - cell "USA" [ref=e212]:
+                    - generic [ref=e213]: USA
+                  - cell "2026-08-21" [ref=e214]
+                  - cell "2027-08-21" [ref=e215]
+                  - cell "NormanMax Risk Advisors, Inc." [ref=e216]:
+                    - generic [ref=e217]: NormanMax Risk Advisors, Inc.
+                  - cell "BOUND" [ref=e218]:
+                    - generic [ref=e219]: BOUND
+                  - cell "ellipsis" [ref=e220]:
+                    - img "ellipsis" [ref=e222] [cursor=pointer]:
+                      - img [ref=e223]
+                - row "PPH0000111359-01-00 Commercial - Hurricane PM Test Broker Taxes DBA Uncle Sam Brokers USA 2026-07-25 2027-07-25 London Underwriters, LLC BOUND ellipsis" [ref=e225]:
+                  - cell "PPH0000111359-01-00" [ref=e226]:
+                    - link "PPH0000111359-01-00" [ref=e227] [cursor=pointer]:
+                      - /url: "#!"
+                  - cell "Commercial - Hurricane PM" [ref=e228]:
+                    - generic [ref=e229]: Commercial - Hurricane PM
+                  - cell "Test Broker Taxes DBA Uncle Sam Brokers" [ref=e230]:
+                    - generic [ref=e231]: Test Broker Taxes DBA Uncle Sam Brokers
+                  - cell "USA" [ref=e232]:
+                    - generic [ref=e233]: USA
+                  - cell "2026-07-25" [ref=e234]
+                  - cell "2027-07-25" [ref=e235]
+                  - cell "London Underwriters, LLC" [ref=e236]:
+                    - generic [ref=e237]: London Underwriters, LLC
+                  - cell "BOUND" [ref=e238]:
+                    - generic [ref=e239]: BOUND
+                  - cell "ellipsis" [ref=e240]:
+                    - img "ellipsis" [ref=e242] [cursor=pointer]:
+                      - img [ref=e243]
+                - row "PRH0000001192-00-00 Residential - Hurricane PM adfe asdfac USA 2025-12-15 2026-12-15 Clovered ISSUED ellipsis" [ref=e245]:
+                  - cell "PRH0000001192-00-00" [ref=e246]:
+                    - link "PRH0000001192-00-00" [ref=e247] [cursor=pointer]:
+                      - /url: "#!"
+                  - cell "Residential - Hurricane PM" [ref=e248]:
+                    - generic [ref=e249]: Residential - Hurricane PM
+                  - cell "adfe asdfac" [ref=e250]:
+                    - generic [ref=e251]: adfe asdfac
+                  - cell "USA" [ref=e252]:
+                    - generic [ref=e253]: USA
+                  - cell "2025-12-15" [ref=e254]
+                  - cell "2026-12-15" [ref=e255]
+                  - cell "Clovered" [ref=e256]:
+                    - generic [ref=e257]: Clovered
+                  - cell "ISSUED" [ref=e258]:
+                    - generic [ref=e259]: ISSUED
+                  - cell "ellipsis" [ref=e260]:
+                    - img "ellipsis" [ref=e262] [cursor=pointer]:
+                      - img [ref=e263]
+                - row "PRH0000001189-00-00 Residential - Hurricane PM adfasdf adfasd USA 2025-12-15 2026-12-15 Clovered ISSUED ellipsis" [ref=e265]:
+                  - cell "PRH0000001189-00-00" [ref=e266]:
+                    - link "PRH0000001189-00-00" [ref=e267] [cursor=pointer]:
+                      - /url: "#!"
+                  - cell "Residential - Hurricane PM" [ref=e268]:
+                    - generic [ref=e269]: Residential - Hurricane PM
+                  - cell "adfasdf adfasd" [ref=e270]:
+                    - generic [ref=e271]: adfasdf adfasd
+                  - cell "USA" [ref=e272]:
+                    - generic [ref=e273]: USA
+                  - cell "2025-12-15" [ref=e274]
+                  - cell "2026-12-15" [ref=e275]
+                  - cell "Clovered" [ref=e276]:
+                    - generic [ref=e277]: Clovered
+                  - cell "ISSUED" [ref=e278]:
+                    - generic [ref=e279]: ISSUED
+                  - cell "ellipsis" [ref=e280]:
+                    - img "ellipsis" [ref=e282] [cursor=pointer]:
+                      - img [ref=e283]
+                - row "PRH0000001188-00-00 Residential - Hurricane PM Alejandro demo 1 DBA Test Company USA 2025-12-15 2026-12-15 Clovered ISSUED ellipsis" [ref=e285]:
+                  - cell "PRH0000001188-00-00" [ref=e286]:
+                    - link "PRH0000001188-00-00" [ref=e287] [cursor=pointer]:
+                      - /url: "#!"
+                  - cell "Residential - Hurricane PM" [ref=e288]:
+                    - generic [ref=e289]: Residential - Hurricane PM
+                  - cell "Alejandro demo 1 DBA Test Company" [ref=e290]:
+                    - generic [ref=e291]: Alejandro demo 1 DBA Test Company
+                  - cell "USA" [ref=e292]:
+                    - generic [ref=e293]: USA
+                  - cell "2025-12-15" [ref=e294]
+                  - cell "2026-12-15" [ref=e295]
+                  - cell "Clovered" [ref=e296]:
+                    - generic [ref=e297]: Clovered
+                  - cell "ISSUED" [ref=e298]:
+                    - generic [ref=e299]: ISSUED
+                  - cell "ellipsis" [ref=e300]:
+                    - img "ellipsis" [ref=e302] [cursor=pointer]:
+                      - img [ref=e303]
+            - generic [ref=e305]:
+              - generic [ref=e306] [cursor=pointer]:
+                - generic [ref=e307]:
+                  - combobox [ref=e309]
+                  - generic "10 per page" [ref=e310]
+                - generic:
+                  - img:
+                    - img
+              - list [ref=e312]:
+                - listitem "Previous Page" [ref=e313]:
+                  - generic [ref=e314]:
+                    - img "left" [ref=e315]:
+                      - img [ref=e316]
+                    - text: Previous
+                - listitem "1" [ref=e318] [cursor=pointer]:
+                  - generic [ref=e319]: "1"
+                - listitem "2" [ref=e320] [cursor=pointer]:
+                  - generic [ref=e321]: "2"
+                - listitem "3" [ref=e322] [cursor=pointer]:
+                  - generic [ref=e323]: "3"
+                - listitem "4" [ref=e324] [cursor=pointer]:
+                  - generic [ref=e325]: "4"
+                - listitem "5" [ref=e326] [cursor=pointer]:
+                  - generic [ref=e327]: "5"
+                - listitem "Next 5 Pages" [ref=e328] [cursor=pointer]:
+                  - generic [ref=e330]:
+                    - img "double-right" [ref=e331]:
+                      - img [ref=e332]
+                    - generic [ref=e334]: •••
+                - listitem "36" [ref=e335] [cursor=pointer]:
+                  - generic [ref=e336]: "36"
+                - listitem "Next Page" [ref=e337] [cursor=pointer]:
+                  - generic [ref=e338]:
+                    - text: Next
+                    - img "right" [ref=e339]:
+                      - img [ref=e340]
+```

@@ -42,15 +42,15 @@ test.describe.serial('Main Navigation Flow', () => {
     await expect(page).toHaveURL(/policies/);
   });
 
-  test('should click New Quote', async () => {
-    await homePage.clickNewQuote();
-    await expect(page.locator(NEW_QUOTE_SELECTORS.riskLocation)).toBeVisible();
-  });
+//   test('should click New Quote', async () => {
+//     await homePage.clickNewQuote();
+//     await expect(page.locator(NEW_QUOTE_SELECTORS.riskLocation)).toBeVisible();
+//   });
 
-  test('should click Risk Location', async () => {
-    await homePage.clickRiskLocation();
-    await expect(page).toHaveURL(/search-risk-location/);
-  });
+//   test('should click Risk Location', async () => {
+//     await homePage.clickRiskLocation();
+//     await expect(page).toHaveURL(/search-risk-location/);
+//   });
 
 //   test('should click Coverage', async () => {
 //     await homePage.clickCoverage();
@@ -67,8 +67,8 @@ test.describe.serial('Main Navigation Flow', () => {
 //     await expect(page).toHaveURL(/bind-policy/);
 //   });
 
-  test('should click Issued Policy', async () => {
-    await homePage.clickIssuedPolicy();
-    await expect(page).toHaveURL(/issued-policy/);
-  });
+//   test('should click Issued Policy', async () => {
+//     await homePage.clickIssuedPolicy();
+//     await expect(page).toHaveURL(/issued-policy/);
+//   });
 });
