@@ -1,8 +1,46 @@
-
-# Playwright
+# Ignore node modules
 node_modules/
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
-/playwright/.auth/
+
+# Ignore build output
+dist/
+
+# Ignore test results
+test-results/
+allure-results/
+allure-report/
+playwright-report/
+
+# Ignore screenshots and videos
+screenshots/
+videos/
+
+# Ignore environment files
+.env
+.env.local
+.env.*.local
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore coverage
+coverage/
+.nyc_output/
+
+# Ignore temporary files
+*.tmp
+temp/
+tmp/

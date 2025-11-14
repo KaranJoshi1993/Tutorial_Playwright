@@ -1,13 +1,14 @@
 import { test, expect, Browser, BrowserContext, Page } from '@playwright/test';
-import HomePage from '../pages/sidebarButtons.page';
-import { LoginPage } from '../pages/login.page';
+import SidebarButtonsPage from '../page-objects/sidebarButtons.page';
+import { LoginPage } from '../page-objects/login.page';
 import { email, password } from '../utils/credentials';
-import { NEW_QUOTE_SELECTORS } from '../locators/locators';
+import { SIDEBAR_BUTTONS_ASSERTIONS } from '../page-constants/sidebarButtons.constants';
+import { LOGIN_PAGE_ASSERTIONS } from '../page-constants/login.constants';
 
 let browser: Browser;
 let context: BrowserContext;
 let page: Page;
-let homePage: HomePage;
+let sidebarButtonsPage: SidebarButtonsPage;
 let loginPage: LoginPage;
 
 test.beforeAll(async ({ browser: browserFromFixture }) => {
@@ -16,59 +17,59 @@ test.beforeAll(async ({ browser: browserFromFixture }) => {
   page = await context.newPage();
 
   loginPage = new LoginPage(page);
-  homePage = new HomePage(page);
+  sidebarButtonsPage = new SidebarButtonsPage(page);
 
-  await loginPage.goto();
+  await loginPage.navigateTo();
   await loginPage.enterEmail(email);
   await loginPage.enterPassword(password);
   await loginPage.clickLogin(page);
-  await expect(page).toHaveTitle(/Dashboard/);
+  await expect(page).toHaveURL(LOGIN_PAGE_ASSERTIONS.alertReportsListURL);
 });
 
-// Runs once after all tests are done
+test.describe.serial('Sidebar Buttons Navigation Flow', () => {
+
+  test('Should click Alert Reports', async () => {
+    await sidebarButtonsPage.clickAlertReports();
+    await expect(page).toHaveURL(SIDEBAR_BUTTONS_ASSERTIONS.alertReportsListURL);
+  });
+
+  test('Should click Vessel Reports', async () => {
+    await sidebarButtonsPage.clickVesselReports();
+    await expect(page).toHaveURL(SIDEBAR_BUTTONS_ASSERTIONS.vesselReportsListURL);
+  });
+
+  // test('Should click Validation Rules', async () => {
+  //   await sidebarButtonsPage.clickValidationList();
+  //   await expect(page).toHaveURL(SIDEBAR_BUTTONS_ASSERTIONS.validationRulesURL);
+  // });
+
+  test('Should click Manage Ports', async () => {
+    await sidebarButtonsPage.clickManagePorts();
+    await expect(page).toHaveURL(SIDEBAR_BUTTONS_ASSERTIONS.managePortsURL);
+  });
+
+  test('Should click Users', async () => {
+    await sidebarButtonsPage.clickUsers();
+    await expect(page).toHaveURL(SIDEBAR_BUTTONS_ASSERTIONS.usersURL);
+  });
+
+  test('Should click Spire AIS Gaps', async () => {
+    await sidebarButtonsPage.clickSpireAISGaps();
+    await expect(page).toHaveURL(SIDEBAR_BUTTONS_ASSERTIONS.spireAISGapsURL);
+  });
+
+  test('Should click Form Configuration', async () => {
+    await sidebarButtonsPage.clickFormConfiguration();
+    await expect(page).toHaveURL(SIDEBAR_BUTTONS_ASSERTIONS.formConfigurationURL);
+  });
+
+  test('should click Information Management', async () => {
+    await sidebarButtonsPage.clickInformationManagement();
+    await expect(page).toHaveURL(SIDEBAR_BUTTONS_ASSERTIONS.informationManagementURL);
+  });
+
+});
+
 test.afterAll(async () => {
-  await context.close(); // ✅ Close context only once
-});
-
-test.describe.serial('Main Navigation Flow', () => {
-
-  test('should click Quotes', async () => {
-    await homePage.clickQuotes();
-    await expect(page).toHaveURL(/quotes/);
-  });
-
-  test('should click Policies', async () => {
-    await homePage.clickPolicies();
-    await expect(page).toHaveURL(/policies/);
-  });
-
-//   test('should click New Quote', async () => {
-//     await homePage.clickNewQuote();
-//     await expect(page.locator(NEW_QUOTE_SELECTORS.riskLocation)).toBeVisible();
-//   });
-
-//   test('should click Risk Location', async () => {
-//     await homePage.clickRiskLocation();
-//     await expect(page).toHaveURL(/search-risk-location/);
-//   });
-
-//   test('should click Coverage', async () => {
-//     await homePage.clickCoverage();
-//     await expect(page).toHaveURL(/coverage/);
-//   });
-
-//   test('should click Quote', async () => {
-//     await homePage.clickQuote();
-//     await expect(page).toHaveURL(/quote/);
-//   });
-
-//   test('should click Bind Policy', async () => {
-//     await homePage.clickBindPolicy();
-//     await expect(page).toHaveURL(/bind-policy/);
-//   });
-
-//   test('should click Issued Policy', async () => {
-//     await homePage.clickIssuedPolicy();
-//     await expect(page).toHaveURL(/issued-policy/);
-//   });
+  await context.close();
 });
