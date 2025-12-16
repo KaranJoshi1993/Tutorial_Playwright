@@ -1,56 +1,56 @@
 import { test, expect, Browser, BrowserContext, Page } from '@playwright/test';
-import { LoginPage } from '../page-objects/login.page';
+import { LoginPageObject } from '../page-objects/loginPageObject';
 import { email, password, wrongemail, wrongpassword } from '../utils/credentials';
-import { LOGIN_PAGE_SELECTORS, LOGIN_PAGE_ASSERTIONS } from '../page-constants/login.constants';
+import { LoginPageConstant, LoginPageAssertion } from '../page-constants/loginPageConstant';
 
 let browser: Browser;
 let context: BrowserContext;
 let page: Page;
-let loginPage: LoginPage;
+let loginPageObject: LoginPageObject;
 
 test.beforeAll(async ({ browser: browserFromFixture }) => {
   browser = browserFromFixture;
   context = await browser.newContext();
   page = await context.newPage();
-  loginPage = new LoginPage(page);
+  loginPageObject = new LoginPageObject(page, context);
 });
 
 test.describe('Login Test Cases', () => {
 
-  test('Should login successfully with valid credentials', async () => {
-    await loginPage.navigateTo();
-    await loginPage.enterEmail(email);
-    await loginPage.enterPassword(password);
-    await loginPage.clickLogin(page);
-    await expect(page).toHaveURL(LOGIN_PAGE_ASSERTIONS.alertReportsListURL);
+  test('TC001 Should login successfully with valid credentials', async () => {
+    await loginPageObject.navigateTo();
+    await loginPageObject.enterEmail(email);
+    await loginPageObject.enterPassword(password);
+    await loginPageObject.clickLogin(page);
+    await expect(page).toHaveURL(LoginPageAssertion.alertReportsListURL);
   });
 
-  test('Should show error for invalid email format', async () => {
-    await loginPage.navigateTo();
-    await loginPage.enterEmail(wrongemail);
-    await loginPage.enterPassword(password);
-    await loginPage.clickLogin(page);
+  test('TC002 Should show error for invalid email format', async () => {
+    await loginPageObject.navigateTo();
+    await loginPageObject.enterEmail(wrongemail);
+    await loginPageObject.enterPassword(password);
+    await loginPageObject.clickLogin(page);
 
-    await expect(page.locator(LOGIN_PAGE_SELECTORS.errorMessage)).toBeVisible();
-    await expect(page.locator(LOGIN_PAGE_SELECTORS.errorMessage)).toContainText(LOGIN_PAGE_ASSERTIONS.microsoft);
+    await expect(page.locator(LoginPageConstant.errorMessage)).toBeVisible();
+    await expect(page.locator(LoginPageConstant.errorMessage)).toContainText(LoginPageAssertion.microsoft);
   });
 
-  test('Should show error for incorrect password', async () => {
-    await loginPage.navigateTo();
-    await loginPage.enterEmail(email);
-    await loginPage.enterPassword(wrongpassword);
-    await loginPage.clickLogin(page);
+  test('TC003 Should show error for incorrect password', async () => {
+    await loginPageObject.navigateTo();
+    await loginPageObject.enterEmail(email);
+    await loginPageObject.enterPassword(wrongpassword);
+    await loginPageObject.clickLogin(page);
 
-    await expect(page.locator(LOGIN_PAGE_SELECTORS.errorMessage)).toBeVisible();
-    await expect(page.locator(LOGIN_PAGE_SELECTORS.errorMessage)).toContainText(LOGIN_PAGE_ASSERTIONS.microsoft);
+    await expect(page.locator(LoginPageConstant.errorMessage)).toBeVisible();
+    await expect(page.locator(LoginPageConstant.errorMessage)).toContainText(LoginPageAssertion.microsoft);
   });
 
-  test('Should show validation for empty email and password', async () => {
-    await loginPage.navigateTo();
-    await loginPage.clickLogin(page);
+  test('TC004 Should show validation for empty email and password', async () => {
+    await loginPageObject.navigateTo();
+    await loginPageObject.clickLogin(page);
 
-    await expect(page.locator(LOGIN_PAGE_SELECTORS.emailError)).toBeVisible();
-    await expect(page.locator(LOGIN_PAGE_SELECTORS.passwordError)).toBeVisible();
+    await expect(page.locator(LoginPageConstant.emailError)).toBeVisible();
+    await expect(page.locator(LoginPageConstant.passwordError)).toBeVisible();
   });
   
 });

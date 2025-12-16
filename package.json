@@ -1,22 +1,25 @@
 {
   "name": "playwright-mocha-pom-ts",
   "version": "1.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-  "clean": "rimraf allure-results allure-report test-results",
-  
-  "pretest": "npm run clean",
-  "test": "playwright test",
-  "test:headed": "playwright test --headed",
-  "test:chromium": "playwright test --project=chromium",
-  "test:debug": "playwright test --debug",
-  "test:ui": "playwright test --ui",
-
-  "report": "allure generate allure-results --clean && allure open",
-  "report:generate": "allure generate allure-results --clean",
-  "report:open": "allure open"
+    "clean": "rimraf allure-results allure-report test-results",
+    "pretest": "npm run clean",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:chromium": "playwright test --project=chromium",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:dev": "TEST_ENV=dev playwright test",
+    "test:staging": "TEST_ENV=staging playwright test",
+    "test:prod": "TEST_ENV=prod playwright test",
+    "test:dev:headed": "TEST_ENV=dev playwright test --headed",
+    "test:staging:headed": "TEST_ENV=staging playwright test --headed",
+    "test:prod:headed": "TEST_ENV=prod playwright test --headed",
+    "report": "allure generate allure-results --clean && allure open",
+    "report:generate": "allure generate allure-results --clean",
+    "report:open": "allure open"
   },
-  
   "keywords": [
     "playwright",
     "typescript",
@@ -27,11 +30,11 @@
   "devDependencies": {
     "@playwright/test": "^1.56.1",
     "@types/adm-zip": "^0.5.7",
-    "@types/mocha": "^10.0.0",
+    "@types/mocha": "^10.0.10",
     "@types/node": "^22.10.2",
     "@types/pdf-parse": "^1.1.5",
     "allure-commandline": "^2.34.1",
-    "allure-playwright": "^3.4.2",
+    "allure-playwright": "^3.4.3",
     "fast-xml-parser": "^5.2.5",
     "mocha": "^10.8.2",
     "mocha-allure-reporter": "^1.4.0",

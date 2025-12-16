@@ -11,7 +11,7 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "moduleResolution": "node",
-    "types": ["node", "@playwright/test"],
+    "types": ["node", "@playwright/test", "mocha"],
     "baseUrl": ".",
     "paths": {
       "@pages/*": ["pages/*"],

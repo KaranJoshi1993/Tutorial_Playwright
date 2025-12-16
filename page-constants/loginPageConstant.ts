@@ -1,5 +1,5 @@
-export const LOGIN_PAGE_SELECTORS = {
-  url: "https://reactjs-shipwatch.agiletechnologies.in/Customlogin",
+export const LoginPageConstant = {
+  // url: "https://staging-admin-validation.ship-watch.com/customlogin",
   emailInput: "input[id='userName']",
   passwordInput: "input[id='password']",
   loginButton: "//span[text()='Sign In']",
@@ -9,7 +9,7 @@ export const LOGIN_PAGE_SELECTORS = {
   errorMessage:"//span[text()='Sign in with Microsoft']",
 };
 
-export const LOGIN_PAGE_ASSERTIONS = {
+export const LoginPageAssertion = {
   alertReportsListURL: "/alert/reports",
   microsoft: "Sign in with Microsoft",
 };

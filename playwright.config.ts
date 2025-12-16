@@ -2,6 +2,20 @@ import { defineConfig, devices } from '@playwright/test';
 import { WaitForLoadStateOptions } from '@utils/optional-parameter-types';
 
 export const LOADSTATE: WaitForLoadStateOptions = 'domcontentloaded';
+
+// Environment configuration
+const environments = {
+  dev: 'https://reactjs-shipwatch.agiletechnologies.in/customlogin',
+  staging: 'https://staging-admin-validation.ship-watch.com/customlogin',
+  prod: 'https://admin.ship-watch.com/customlogin'
+};
+
+// Get environment from command line or default to staging
+const env = (process.env.TEST_ENV || 'dev') as keyof typeof environments;
+const baseURL = environments[env];
+
+console.log(`Running tests against: ${env.toUpperCase()} environment (${baseURL})`);
+
 export default defineConfig({
   testDir: './tests',
   fullyParallel: true,
@@ -31,12 +45,13 @@ export default defineConfig({
       environmentInfo: {
         framework: 'Playwright',
         node_version: process.version,
-        os: process.platform
+        os: process.platform,
+        environment: env
       }
     }]
   ],
   use: {
-    baseURL: "https://reactjs-shipwatch.agiletechnologies.in/",
+    baseURL: baseURL,
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     viewport: { width: 1920, height: 1080 },

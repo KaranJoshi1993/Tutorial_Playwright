@@ -1,0 +1,51 @@
+
+{
+    "BasicDetails": {
+        "vesselName": "9489118",
+        "reportType": "Arrival",
+        "reportEvent": "Anchor Up",
+        "voyageNumber": "Automation Testing",
+        "repairReport": "No"
+    },
+
+    "ReportOverview": {
+        "selectiveDate": "td[title='2025-12-01']",
+        "selectiveHour": "//li[@class='ant-picker-time-panel-cell ant-picker-time-panel-cell-selected'] //div[text()=12]",
+        "localDateTime": "//a[text()='Now']",
+        "localDateTimeOffset": "UTC+05:00",
+        "latDegrees": "1",
+        "latMinutes": "1",
+        "latSeconds": "1",
+        "latDirection": "N",
+        "lonDegrees": "2",
+        "lonMinutes": "2",
+        "lonSeconds": "2",
+        "lonDirection": "E",
+        "headingCardinal": "NE",
+        "headingDegrees": "11.11111",
+        "courseCardinal": "SE",
+        "courseDegrees": "22.22222",
+        "currentPort": "port",
+        "portETD": "//div[@class='ant-picker-dropdown css-13e2l7p ant-picker-dropdown-placement-topLeft']//a[text()='Now']",
+        "portETDOffset": "UTC+14:00",
+        "primaryReasonForPortCall": "Bunkering",
+        "upcomingPort1": "Port",
+        "upcomingPort1Via": "div[title='CAPE OF GOOD HOPE']",
+        "upcomingPort1ETA": "//div[@class='ant-picker-dropdown css-13e2l7p ant-picker-dropdown-placement-topLeft']//a[text()='Now']",
+        "upcomingPort1ETAOffset": "UTC+14:00",
+        "upcomingPort1DistanceToGo": "1111",
+        "endangeredNavigation": "Yes",
+        "reasonForEndangeringSafetyOfNavigation": " Saving life at sea",
+        "sailingInIceConditions": "No",
+        "estArrivalDraftFore": "12.34567",
+        "estArrivalDraftAft": "22.345685",
+        "estArrivalSwBwFw": "SW",
+        "berthSTSVesselName": "Automation Testing",
+        "reasonForBerthCall": "Bunkering",
+        "cargoOperation": "Load",
+        "berthOrSTS": "Berth",
+        "stsLocation": "Inside Port Limits",
+        "lastDeparturePort": "Port",
+        "distanceSinceDeparture": "25.452632"
+    }
+}
