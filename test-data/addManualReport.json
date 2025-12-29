@@ -1,7 +1,7 @@
 
 {
     "BasicDetails": {
-        "vesselName": "9489118",
+        "vesselName": "Navig8 Constellation-9489118",
         "reportType": "Arrival",
         "reportEvent": "Anchor Up",
         "voyageNumber": "Automation Testing",
@@ -25,11 +25,11 @@
         "headingDegrees": "11.11111",
         "courseCardinal": "SE",
         "courseDegrees": "22.22222",
-        "currentPort": "port",
+        "currentPort": "BARBADOS",
         "portETD": "//div[@class='ant-picker-dropdown css-13e2l7p ant-picker-dropdown-placement-topLeft']//a[text()='Now']",
         "portETDOffset": "UTC+14:00",
         "primaryReasonForPortCall": "Bunkering",
-        "upcomingPort1": "Port",
+        "upcomingPort1": "FREEPORT (BAHAMAS)- BSFPO",
         "upcomingPort1Via": "div[title='CAPE OF GOOD HOPE']",
         "upcomingPort1ETA": "//div[@class='ant-picker-dropdown css-13e2l7p ant-picker-dropdown-placement-topLeft']//a[text()='Now']",
         "upcomingPort1ETAOffset": "UTC+14:00",

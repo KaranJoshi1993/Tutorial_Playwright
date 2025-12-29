@@ -1,16 +1,17 @@
 import test, { BrowserContext, expect, Page } from "@playwright/test";
 import { LoginPageConstant, LoginPageAssertion } from '../page-constants/loginPageConstant';
-import { ActionUtils } from "../utils/action-utils";
+// import { ActionUtils } from "../utils/action-utils";
+import * as dotenv from 'dotenv';
+dotenv.config(); // Load .env variables
 
-export class LoginPageObject extends ActionUtils {
+export class LoginPageObject {
 
   page: Page;
   context: BrowserContext;
   constructor(page: Page, context: BrowserContext) {
-    super(page, context);
     this.page = page;
     this.context = context;
-  }
+  }  
 
   //Actions
   async navigateTo() {
@@ -37,3 +38,5 @@ export class LoginPageObject extends ActionUtils {
   }
 
 }
+
+
